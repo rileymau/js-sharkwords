@@ -42,12 +42,17 @@ const generateLetterButtons = () => {
 //
 const disableLetterButton = buttonEl => {
   // Replace this with your code
+  const button = $(buttonEl);
+    button.attr('disabled', true);
 };
 
 // Return `true` if `letter` is in the word.
 //
 const isLetterInWord = letter => {
   // Replace this with your code
+
+ $(`div.${letter}`)[0] !== undefined;
+console.log($(`div.${letter}[0]`))
 };
 
 // Called when `letter` is in word. Update contents of divs with `letter`.
